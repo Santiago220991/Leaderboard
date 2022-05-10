@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-[To do List Live Demo Link ](https://santiago220991.github.io/Leaderboard/dist/)
+[Leaderboard Live Demo Link ](https://santiago220991.github.io/Leaderboard/dist/)
 
 ## Getting Started
 
