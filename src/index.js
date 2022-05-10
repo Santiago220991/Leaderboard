@@ -47,7 +47,6 @@ const submitfun= async(player,score,gameid)=>{
 }
 
 const refreshfun= async (gameid,scoresdiv)=>{
-    let result=[]
     let response= await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameid}/scores`,{
     method: "GET",
     headers: {
@@ -56,12 +55,7 @@ const refreshfun= async (gameid,scoresdiv)=>{
     })
     response= await response.json()
     console.log(response)
-    response.result.forEach((element,index)=>{
-        if(index%2==0){
-            result.push(element)
-        }})
-    console.log(result)
-    result.forEach(element=>{
+    response.result.forEach(element=>{
     scoresdiv.innerHTML+=`<li>${element.user}  ${element.score}</li>`
     })
     }
