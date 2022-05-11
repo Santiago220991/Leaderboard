@@ -36,7 +36,7 @@ const submitfun = async (player, score, gameid) => {
     await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameid}/scores`, {
       method: 'POST',
       body: JSON.stringify({
-        user: `${player.value}`,
+        user: `${player.value}:`,
         score: `${score.value}`,
       }),
       headers: {
