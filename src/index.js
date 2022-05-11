@@ -6,10 +6,15 @@ const score=document.querySelector(".score")
 const submitbtn=document.querySelector(".submit")
 const refreshbtn=document.querySelector(".refresh")
 const scoresdiv=document.querySelector(".scores-div")
-
+const msg=document.querySelector("#message")
 let   gameid=localStorage.getItem('scores')
 let api = "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/"
 
+
+const hide=()=> {
+    msg.classList.remove('active');
+    msg.classList.remove("empty");
+  };
 
  const gamename= async (gameid)=>{
     let response= await fetch(api,{
@@ -22,15 +27,15 @@ let api = "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/
     })
     response= await response.json()
     gameid=await response.result.slice(14,34)
-    console.log(gameid)
     localStorage.setItem("scores",gameid)
+    window.location.reload()
 }
 
 
 
 const submitfun= async(player,score,gameid)=>{
     if(player.value!=="" && score.value!==""){
-    fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameid}/scores`,{
+    let response= await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameid}/scores`,{
     method: "POST",
     body: JSON.stringify({ 
         "user": `${player.value}`,
@@ -41,12 +46,23 @@ const submitfun= async(player,score,gameid)=>{
         "Content-type": "application/json; charset=UTF-8"
     }
     })
-    .then(response=>response.json())
-    .then(data=>console.log(data))
+    msg.textContent="Score Added"
+    msg.classList.add("active")
+    player.value=""
+    score.value=""
+    setTimeout(hide,2000) 
+    }else{
+    msg.textContent="Inputs shouldn't be empty"
+    msg.classList.add("empty")
+    setTimeout(hide,2000) 
     }
 }
 
 const refreshfun= async (gameid,scoresdiv)=>{
+    msg.textContent="Getting Data"
+    msg.classList.add("active")
+    setTimeout(hide,2000) 
+    scoresdiv.innerHTML=""
     let response= await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameid}/scores`,{
     method: "GET",
     headers: {
@@ -54,9 +70,8 @@ const refreshfun= async (gameid,scoresdiv)=>{
     }
     })
     response= await response.json()
-    console.log(response)
     response.result.forEach(element=>{
-    scoresdiv.innerHTML+=`<li>${element.user}  ${element.score}</li>`
+    scoresdiv.innerHTML+=`<li class="scores-li">${element.user}  ${element.score}</li>`
     })
     }
     
