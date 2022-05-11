@@ -6,6 +6,7 @@ html{
 body{
   width: 60%;
 }
+
 .leaderboard h1 {
   font-size: 38px;
   font-weight: bold;
@@ -16,7 +17,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   column-gap: 50px;
-  margin-left: 3%;
+  margin-left: 4%;
 }
 
 .recent-scores {
@@ -32,17 +33,22 @@ section {
 
 .scores-div {
   min-height: 50px;
-  border: solid 2px black;
+  border: solid 2px rgb(83, 80, 80);
   margin-top: 0;
   padding-left: 0;
-  max-height: 90px;
-  overflow-y: auto;
+  max-height: 200px;
+  overflow-y:auto;
   max-width: 206.6px;
+  border-radius: 3px;
 }
+
 
 .scores-li {
   list-style: none;
-  margin-left: 10px;
+}
+
+.scores-li:nth-child(odd){
+  background-color: antiquewhite;
 }
 
 .msg-submit {
@@ -112,8 +118,10 @@ section {
 
 .name {
   margin-bottom: 10px;
+  border-radius: 3px;
 }
 
 .score {
   margin-bottom: 10px;
+  border-radius: 3px;
 }
