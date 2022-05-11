@@ -1,4 +1,11 @@
+html{
+  display:flex;
+  justify-content: center;
+}
 
+body{
+  width: 60%;
+}
 .leaderboard h1 {
   font-size: 38px;
   font-weight: bold;
