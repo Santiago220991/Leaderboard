@@ -73,13 +73,30 @@ section {
 .submit {
   border: 1px solid black;
   padding: 5px;
+  padding-top: 1px;
+  padding-bottom:1px;
+  padding-left: 5px;
+  padding-right:5px;
   cursor: pointer;
+  border-radius: 3px;
+}
+
+.submit:hover {
+  background-color: aqua;
 }
 
 .refresh {
   border: 1px solid black;
-  padding: 5px;
+  padding-top: 1px;
+  padding-bottom:1px;
+  padding-left: 5px;
+  padding-right:5px;
+  border-radius: 3px;
   cursor: pointer;
+}
+
+.refresh:hover {
+  background-color: aqua;
 }
 
 .add-scores {
