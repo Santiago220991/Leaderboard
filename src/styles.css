@@ -33,34 +33,34 @@ section {
   max-width: 206.6px;
 }
 
-.scores-li{
+.scores-li {
   list-style: none;
   margin-left: 10px;
 }
 
-.msg-submit{
-  display:flex;
+.msg-submit {
+  display: flex;
   align-items: center;
   justify-content: flex-end;
   column-gap: 20px;
 }
 
-#message{
-  display:none;
+#message {
+  display: none;
   margin: 0;
   font-size: 12px;
   font-weight: 100;
   color: green;
-  margin-left: 10px
+  margin-left: 10px;
 }
 
-#message.active{
-  display:block;
+#message.active {
+  display: block;
 }
 
-#message.empty{
-  display:block;
-  color:red;
+#message.empty {
+  display: block;
+  color: red;
 }
 
 .submit {
@@ -84,15 +84,12 @@ section {
 .add-scores p {
   font-size: 24px;
   font-weight: bold;
-  
 }
 
 .name {
   margin-bottom: 10px;
- 
 }
 
 .score {
   margin-bottom: 10px;
-
 }
