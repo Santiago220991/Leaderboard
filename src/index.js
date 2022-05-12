@@ -29,7 +29,7 @@ const gamename = async (gameid) => {
 };
 
 const submitfun = async (player, score, gameid) => {
-  if (player.value !== '' && score.value !== '') {
+  if (player.value !== '' && score.value !== '' && typeof(score.value)===false) {
     await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameid}/scores`, {
       method: 'POST',
       body: JSON.stringify({
@@ -46,7 +46,7 @@ const submitfun = async (player, score, gameid) => {
     score.value = '';
     setTimeout(hide, 2000);
   } else {
-    msg.textContent = "Inputs shouldn't be empty";
+    msg.textContent = "Inputs shouldn't be empty. Score must be a number";
     msg.classList.add('empty');
     setTimeout(hide, 2000);
   }
