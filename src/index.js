@@ -67,7 +67,10 @@ const refreshfun = async (gameid, scoresdiv) => {
     },
   });
   response = await response.json();
-  response.result.forEach((element) => {
+  console.log(response.result)
+  response = response.result.sort((a,b)=>{return b.score-a.score})
+  console.log(response)
+  response.forEach((element) => {
     scoresdiv.innerHTML += `<li class="scores-li">${element.user}  ${element.score}</li>`;
   });
 };
