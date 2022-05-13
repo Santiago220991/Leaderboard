@@ -18,12 +18,11 @@ https://user-images.githubusercontent.com/98363075/168385071-eef76128-98c1-4470-
 
 ## Getting Started
 
-**This is a Leaderboard. It shows a minimalist desing with the nex features:**
+**This is a Leaderboard web page built using a leaderboard API to store the scores. It shows a simple design with the next features:**
 
 **Add a new Name and Score**
 
 **Refresh the Leaderboard**
-
 
 **This project was made with HTML, CSS and Javascript.**
 
