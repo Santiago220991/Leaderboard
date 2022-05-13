@@ -4,7 +4,7 @@
 
 > Leaderboard
 
-https://www.loom.com/share/c802375595594afdb28c85b2214da835
+https://user-images.githubusercontent.com/98363075/168385071-eef76128-98c1-4470-9dd2-a9e2707f1d12.mp4
 
 ## Built With
 
