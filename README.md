@@ -54,7 +54,7 @@ Feel free to check the [issues page](https://github.com/Santiago220991/Leaderboa
 
 ## Acknowledgments
 
-- Original design idea by [web.archive.org](https://web.archive.org/web/20180320194056/http://www.getminimalist.com:80/).
+- Original design idea by [Microverse]().
 
 ## Show your support
 
