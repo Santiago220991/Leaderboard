@@ -20,11 +20,11 @@ https://user-images.githubusercontent.com/98363075/168385071-eef76128-98c1-4470-
 
 **This is a Leaderboard web page built using a leaderboard API to store the scores. It shows a simple design with the next features:**
 
-**Add a new Name and Score**
+- Add a new Name and Score
 
-**Refresh the Leaderboard**
+- Refresh the Leaderboard
 
-**This project was made with HTML, CSS and Javascript.**
+- This project was made with HTML, CSS and Javascript.**
 
 
 To get a local copy up and running follow these simple example steps.
