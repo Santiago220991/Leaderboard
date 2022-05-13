@@ -24,7 +24,7 @@ https://user-images.githubusercontent.com/98363075/168385071-eef76128-98c1-4470-
 
 - Refresh the Leaderboard.
 
-- This project was made with HTML, CSS and Javascript.
+- This project was made with HTML, CSS and JavaScript.
 
 
 To get a local copy up and running follow these simple example steps.
