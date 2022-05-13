@@ -54,7 +54,7 @@ Feel free to check the [issues page](https://github.com/Santiago220991/Leaderboa
 
 ## Acknowledgments
 
-- Original design idea by [Microverse]().
+- Original design idea by Microverse.
 
 ## Show your support
 
