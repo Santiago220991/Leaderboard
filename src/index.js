@@ -32,7 +32,7 @@ const gamename = async (gameid) => {
 };
 
 const submitfun = async (player, score, gameid) => {
-  if (player.value !== '' && score.value !== '' && typeof(score.value)===false) {
+  if (player.value !== '' && score.value !== '' && isNaN(score.value)===false) {
     await fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameid}/scores`, {
       method: 'POST',
       body: JSON.stringify({
