@@ -1,8 +1,12 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Leaderboard
 
-> Leaderboard
+> **This is a Leaderboard web page built using a leaderboard API to store the scores. It shows a simple design with the next features:**
+
+- Add a new Name and Score.
+- Refresh the Leaderboard.
+- This project was made with HTML, CSS and JavaScript.
 
 https://user-images.githubusercontent.com/98363075/168385071-eef76128-98c1-4470-9dd2-a9e2707f1d12.mp4
 
@@ -17,15 +21,6 @@ https://user-images.githubusercontent.com/98363075/168385071-eef76128-98c1-4470-
 [Leaderboard Live Demo](https://santiago220991.github.io/Leaderboard/dist/)
 
 ## Getting Started
-
-**This is a Leaderboard web page built using a leaderboard API to store the scores. It shows a simple design with the next features:**
-
-- Add a new Name and Score.
-
-- Refresh the Leaderboard.
-
-- This project was made with HTML, CSS and JavaScript.
-
 
 To get a local copy up and running follow these simple example steps.
 
